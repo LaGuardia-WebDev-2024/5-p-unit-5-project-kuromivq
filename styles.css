@@ -1,0 +1,21 @@
+   p{
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  text-align: center;
+      }
+h1{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing:auto
+  font: weight 40px;
+  font-style:normal;
+  text-align: center;
+}
+h3{
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  text-align: center;
+}
