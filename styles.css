@@ -4,7 +4,7 @@
   font-weight: <weight>;
   font-style: normal;
   text-align: center;
-      }
+ }
 h1{
   font-family: "Montserrat", sans-serif;
   font-optical-sizing:auto
@@ -19,3 +19,16 @@ h3{
   font-style: normal;
   text-align: center;
 }
+.important {
+  color: rgb(179,126,181);
+}
+
+ table, th,td {
+            border: 2px solid; color: rgb(179,126,181); 
+            font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  text-align: center;
+}
+ 

@@ -21,16 +21,23 @@ Select TWO Additional Features to Add
   <title> Introduction To BTS </title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="styles.css">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
   <style>
       ul{
         list-style-type: none;
         margin: 0%;
         padding: 0%;
-
-        background-color:black;
-        overflow:hidden;
       }
+
       li{
         display: inline;
       }
@@ -40,8 +47,73 @@ Select TWO Additional Features to Add
         background-color:darkgrey;
         color:beige; 
       }
+      body {
+  font-family:'Courier New', Courier, monospace;
+  font-size: 12px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}  
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+#one-back {
+  background-color: #201E1F;
+  color: #D39938;
+  transform: rotateY(180deg);
+}  
+#two-back {
+  background-color: #fffefe;
+  color: #DE0100;
+  transform: rotateY(180deg);
+}  
   </style>
 </head>
+
+
+
+
+
+
+
 
 <body>
 <ul>
@@ -52,7 +124,63 @@ Select TWO Additional Features to Add
     </ul>
 
     <h1>Discography</h1>
-<p> wasjkasbdyehwbfkjebfj</p>
+  <p> 
+    BTS have produced/ co-produced 
+  <ul>
+    <li>Studio albums	9</li>
+    <li>EPs	6 </li>
+    <li>Soundtrack albums	1</li>
+   <li>Live albums	1</li>
+  <li>Compilation albums	8 </li>
+   <li>Reissues	2</li>
+   <li>Single albums	2</li>
+</ul>
+  </p>
+<h3>While BTS have so many beautifully produced albums, singles, and eps, this list is focused on promoted albums</h3>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://ibighit.com/bts/images/bts/discography/2_cool_4_school/album-cover.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back" id="one-back">
+      <h1>2 COOL 4 SKOOL</h1> 
+      <p>1st Single Album</p> 
+      <p>Intro : 2 COOL 4 SKOOL feat. DJ Friz 1’03”<br>
+We are bulletproof PT.2 3’45”<br>
+Skit : Circle room talk 2’11”<br>
+No More Dream 3’42”<br>
+Interlude 0’52”<br>
+Like 3’51”<br>
+Outro : Circle room cypher 5’21”</p>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://ibighit.com/bts/images/bts/discography/o_rul8_2/album-cover.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back" id="two-back">
+      <h1>O!RUL8,2?</h1> 
+      <p>1st Mini Album</p> 
+      <p>INTRO : O!RUL8,2? 1’11” <br>
+      N.O 3’30” <br>
+      We On 3’51”<br>
+      Skit: R U Happy Now? 2’28” <br>
+      If I Ruled the World 4’07”<br>
+      Coffee 4’20” <br>
+      BTS Cypher PT.1 2’11”<br>
+      Attack on Bangtan 4’07” <br>
+      Paldogangsan 3’25”<br>
+      0OUTRO : LUV IN SKOOL 1’26”</p>
+    </div>
+  </div>
+</div>
  
 
 </body>
